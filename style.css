@@ -1,0 +1,57 @@
+body {
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+#container {
+  background-color: white;
+  position: relative;
+  justify-items: center;
+  padding-top: 17px;
+  top: 190px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  animation-name: box;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+#submit {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+  top: 10px;
+  border: none;
+  border-radius: 5px;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@media  screen and (max-width: 600px) {
+ #submit{
+  left: 0px;
+ }
+}
+
+
+@keyframes box {
+  0% {
+    left: 0;
+  }
+
+  35% {
+    left: -15em;
+  }
+  75% {
+    left: 15em;
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+  }
+}
